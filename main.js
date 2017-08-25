@@ -30,11 +30,20 @@ var maxTeamSize = defaultMaxTeamSize;
 var maxTeamLimit = int(AMNTofPlayers / maxMaxTeamSize);
 
 function initializeArrays(){
-  for(var i = 0; i < AMNTofPlayers; i++){
-	  playerNames.push(0);
-    playersAlive.push(0);
-    playerPersonalityStatus.push(0);
-    playerPhysicalStatus.push(0);
-    playerMentalStatus.push(0);
-  }
+  	for(var i = 0; i < AMNTofPlayers; i++){
+    		playerNames.push(0);
+    		playersAlive.push(0);
+    		playerPersonalityStatus.push(0);
+    		playerPhysicalStatus.push(0);
+    		playerMentalStatus.push(0);
+  	}
+}
+
+function arrayContains(array,value){
+	for(var i = 0; i < array.length; i++){
+		var cur = array[i];
+		if(cur = value){
+			return true;
+		}
+	}
 }
