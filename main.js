@@ -1,1 +1,1 @@
-var settings = arr[1,2,3];
+var settings = ["1","2","3"];
