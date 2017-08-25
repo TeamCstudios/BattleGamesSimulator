@@ -5,6 +5,12 @@ var defaultMaxTeamSize = 6;
 //Player names array
 var playernames = [];
 
+//Other player-related arrays
+var playersAlive = [];
+var playerPersonalityStatus = [];
+var playerPhysicalStatus = [];
+var playerMentalStatus = [];
+
 //Non-static variables related to  players
 var pCountFloor = 8;
 var pCountCeiling = 48;
