@@ -66,11 +66,10 @@ function toggleTeams(){
 
 //Changes the player count
 function changePlayerCount(){
-	
 	if(AMNTofPlayers != 48) {
 		AMNTofPlayers = AMNTofPlayers + 8;
 	} else {
 		AMNTofPlayers = 8;
 	}
-	document.getElementById("playercountbutton").textContent = AMNTofPlayers + "Players";
+	document.getElementById("playercountbutton").textContent = AMNTofPlayers + " Players";
 }
