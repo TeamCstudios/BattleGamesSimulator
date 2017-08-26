@@ -16,6 +16,7 @@ var playerNames = [];
 /* Other player-related arrays
 These store each player's statistics */
 var playersAlive = [];
+var playerChecked = [];
 //Personality Status effects joining alliances.
 var playerPersonalityStatus = [];
 //Physical Status effects performance in fights. The higher it is, the more injured a player is.
@@ -176,5 +177,15 @@ function namePlayers(){
 		playerPersonalityStatus[i] = Math.floor(Math.random() * 10) + 1;
 		playerPhysicalStatus[i] = 0;
 		playerMentalStatus[i] = 0;
+	}
+}
+
+//NOT DONE YET
+function playerEventChecker(){
+	for(var i = 0; i < AMNTofPlayers; i++){
+		playerChecked.push(1);
+	}
+	for(var i = 0; i < AMNTofPlayers; i++){
+		var playerid = i;
 	}
 }
