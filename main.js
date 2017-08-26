@@ -41,6 +41,14 @@ var team4 = [];
 //Buttons
 var optionstoggled = true;
 
+/* These functions handle game settings.
+These are usually tied to buttons. */
+
+//Startup Script
+function startup() {
+	toggleOptions();
+}
+
 //Toggle Buttons Toggle W h a t
 function toggleOptions() {
 	var toggleteamsbutton = document.getElementById("toggleteamsbutton");
@@ -61,9 +69,6 @@ function toggleOptions() {
 		 optionstoggled = true;
 	 }
 }
-
-/* These functions handle game settings.
-These are usually tied to buttons. */
 
 //Toggles whether teams exist or not.
 function toggleTeams(){
