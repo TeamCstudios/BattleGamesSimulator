@@ -54,7 +54,11 @@ function arrayContains(array,value){
 //toggles whether teams exist or not.
 function toggleTeams(){
 	if(teamsExist){
-		
+		teamsExist = false;
+		document.getElementById("toggleteamsbutton").textContent = "Enable Teams";
+	}else{
+		teamsExist = true;
+		document.getElementById("toggleteamsbutton").textContent = "Disable Teams";
 	}
 }
 
