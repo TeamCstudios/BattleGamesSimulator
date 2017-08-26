@@ -102,6 +102,7 @@ function arrayContains(array,value){
 	}
 }
 
+//This function writes text to whatever element you want.
 function writeTo(element,text){
 	document.getElementById(element).innerHTML = text;
 }
