@@ -1,23 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Battle Games Simulator</title>
+  <title>Battle Games Simulator</title>
  <link rel="stylesheet" href="style.css">
  <script src="main.js"></script>
 </head>
 
 <h1>Battle Games Simulator</h1>
-<p>The end-all be all for battle games simulations. Make sure you have popups on!
+<p>The end-all be all for battle games simulations.
 </br>
 Start your Battle Game by configuring the settings!</p>
 <div id="centerbutton">
+  <button id="toggleoptions" type="button" onclick="toggleOptions()">Toggle Options</button><br/>
 <button id="toggleteamsbutton" type="button" onclick="toggleTeams()">Enable Teams</button>
 <button id="playercountbutton" type="button" onclick="changePlayerCount()">24 Players</button>
 <button id="gamespeedbutton" type="button" onclick="changeGameSpeed()">3 Game Speed</button>
 <button id="teamsizebutton" type="button" onclick="changeMaxTeamSize()">6 Max Team Size</button>
 </br>
 <p>Press this button to name your players!</p>
-</br>
 <button id="nameplayersbutton" type="button" onclick="namePlayers()">Name Players</button>
 </div>
  <p id="paragraph2"></p>

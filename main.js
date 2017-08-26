@@ -38,6 +38,30 @@ var team2 = [];
 var team3 = [];
 var team4 = [];
 
+//Buttons
+var optionstoggled = true;
+
+//Toggle Buttons Toggle W h a t
+function toggleOptions() {
+	var toggleteamsbutton = document.getElementById("toggleteamsbutton");
+	var playercountbutton = document.getElementById("playercountbutton");
+	var gamespeedbutton = document.getElementById("gamespeedbutton");
+	var teamsizebutton = document.getElementById("teamsizebutton");
+   if(optionstoggled == true) {
+		 toggleteamsbutton.style.display = "none";
+		 playercountbutton.style.display = "none";
+		 gamespeedbutton.style.display = "none";
+		 teamsizebutton.style.display = "none";
+		 optionstoggled = false;
+	 } else {
+		 toggleteamsbutton.style.display = "inline";
+		 playercountbutton.style.display = "inline";
+		 gamespeedbutton.style.display = "inline";
+		 teamsizebutton.style.display = "inline";
+		 optionstoggled = true;
+	 }
+}
+
 /* These functions handle game settings.
 These are usually tied to buttons. */
 
@@ -119,7 +143,7 @@ function initializePlayerArrays(){
   	}
 	maxMaxTeamSize = int(AMNTofPlayers / 4);
 	maxTeamLimit = int(AMNTofPlayers / maxMaxTeamSize);
-	
+
 }
 function initializeTeamArrays(){
 	team1 = [];
