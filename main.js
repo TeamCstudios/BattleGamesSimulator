@@ -65,12 +65,12 @@ function changePlayerCount(){
 
 //Changes the game speed
 function changeGameSpeed(){
-	if(AMNTofPlayers != 5) {
-		gameSpeed = gameSpeed + 8;
+	if(gameSpeed != 5) {
+		gameSpeed = gameSpeed + 1;
 	} else {
-		AMNTofPlayers = 5;
+		gameSpeed = 5;
 	}
-	document.getElementById("playercountbutton").textContent = gameSpeed + " Game Speed";
+	document.getElementById("gamespeedbutton").textContent = gameSpeed + " Game Speed";
 }
 
 
