@@ -37,6 +37,7 @@ function initializeArrays(){
     		playerPhysicalStatus.push(0);
     		playerMentalStatus.push(0);
   	}
+	
 }
 
 function arrayContains(array,value){
@@ -46,4 +47,14 @@ function arrayContains(array,value){
 			return true;
 		}
 	}
+}
+
+function toggleTeams(){
+	if(teamsExist){
+		
+	}
+}
+
+function changePlayerCount(){
+	
 }
