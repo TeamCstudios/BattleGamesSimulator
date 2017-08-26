@@ -101,3 +101,7 @@ function arrayContains(array,value){
 		}
 	}
 }
+
+function testWrite(){
+	document.getElementById("paragraph2").innerHTML = "Ya like jazz?";
+}
