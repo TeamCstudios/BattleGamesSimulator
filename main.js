@@ -38,6 +38,8 @@ function initializeArrays(){
     		playerPhysicalStatus.push(0);
     		playerMentalStatus.push(0);
   	}
+	maxMaxTeamSize = int(AMNTofPlayers / 4);
+	maxTeamLimit = int(AMNTofPlayers / maxMaxTeamSize);
 	
 }
 
@@ -64,5 +66,20 @@ function toggleTeams(){
 
 //Changes the player count
 function changePlayerCount(){
-	
+	if(AMNTofPlayers = 24){
+		AMNTofPlayers = 36;
+		document.getElementById("playercountbutton").textContent = "36 Players";
+	}else if(AMNTofPlayers = 36){
+		AMNTofPlayers = 48;	
+		document.getElementById("playercountbutton").textContent = "48 Players";
+	}else if(AMNTofPlayers = 48){
+		AMNTofPlayers = 8;	
+		document.getElementById("playercountbutton").textContent = "8 Players";
+	}else if(AMNTofPlayers = 8){
+		AMNTofPlayers = 16;	
+		document.getElementById("playercountbutton").textContent = "16 Players";
+	}else if(AMNTofPlayers = 16){
+		AMNTofPlayers = 24;	
+		document.getElementById("playercountbutton").textContent = "24 Players";
+	}
 }
