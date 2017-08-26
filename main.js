@@ -60,7 +60,7 @@ function changePlayerCount(){
 		AMNTofPlayers = 8;
 	}
 	document.getElementById("playercountbutton").textContent = AMNTofPlayers + " Players";
-	initializeArrays();
+	initializePlayerArrays();
 }
 
 //Changes the game speed
@@ -71,6 +71,17 @@ function changeGameSpeed(){
 		gameSpeed = 1;
 	}
 	document.getElementById("gamespeedbutton").textContent = gameSpeed + " Game Speed";
+}
+
+//Changes the max team size
+function changeMaxTeamSize(){
+	if(maxTeamSize != maxMaxTeamSize) {
+		maxTeamSize = maxTeamSize + 1;
+	} else {
+		maxTeamSize = 2;
+	}
+	document.getElementById("teamsizebutton").textContent = maxTeamSize + " Max Team Size";
+	initializeTeamArrays();
 }
 
 
@@ -93,8 +104,13 @@ function writeTo(element,text){
 }
 
 //This function initializes arrays, and will be run after the player count is changed
-function initializeArrays(){
-  	for(var i = 0; i < AMNTofPlayers; i++){
+function initializePlayerArrays(){
+  	playerNames = [];
+	playersAlive = [];
+	playerPersonalityStatus = [];
+	playerPhysicalStatus = [];
+	playerMentalStatus = [];
+	for(var i = 0; i < AMNTofPlayers; i++){
     		playerNames.push(0);
     		playersAlive.push(0);
     		playerPersonalityStatus.push(0);
@@ -104,4 +120,20 @@ function initializeArrays(){
 	maxMaxTeamSize = int(AMNTofPlayers / 4);
 	maxTeamLimit = int(AMNTofPlayers / maxMaxTeamSize);
 	
+}
+function initializeTeamArrays(){
+	team1 = [];
+	team2 = [];
+	team3 = [];
+	team4 = [];
+	teamNumberExists = [];
+	for(var i = 0; i < maxTeamSize; i++){
+		team1.push(0);
+		team2.push(0);
+		team3.push(0);
+		team4.push(0);
+	}
+	for(var i = 0; i < 4; i++){
+		teamNumberExists.push(0);
+	}
 }
