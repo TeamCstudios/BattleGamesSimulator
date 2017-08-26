@@ -137,3 +137,15 @@ function initializeTeamArrays(){
 		teamNumberExists.push(0);
 	}
 }
+
+
+//This function handles the player naming.
+function namePlayers(){
+	for(var i = 0; i < AMNTofPlayers; i++){
+		playerNames[i] = prompt("Name the player","Name");
+		playersAlive[i] = 1;
+		playerPersonalityStatus[i] = Math.floor(Math.random() * 10) + 1;
+		playerPhysicalStatus[i] = 0;
+		playerMentalStatus[i] = 0;
+	}
+}
