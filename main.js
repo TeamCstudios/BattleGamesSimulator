@@ -38,21 +38,6 @@ var team2 = [];
 var team3 = [];
 var team4 = [];
 
-//This function initializes arrays, and will be run after the player count is changed
-function initializeArrays(){
-  	for(var i = 0; i < AMNTofPlayers; i++){
-    		playerNames.push(0);
-    		playersAlive.push(0);
-    		playerPersonalityStatus.push(0);
-    		playerPhysicalStatus.push(0);
-    		playerMentalStatus.push(0);
-  	}
-	maxMaxTeamSize = int(AMNTofPlayers / 4);
-	maxTeamLimit = int(AMNTofPlayers / maxMaxTeamSize);
-	
-}
-
-
 /* These functions handle game settings.
 These are usually tied to buttons. */
 
@@ -80,12 +65,12 @@ function changePlayerCount(){
 
 //Changes the game speed
 function changeGameSpeed(){
-	if(AMNTofPlayers != 48) {
-		AMNTofPlayers = AMNTofPlayers + 8;
+	if(AMNTofPlayers != 5) {
+		gameSpeed = gameSpeed + 8;
 	} else {
-		AMNTofPlayers = 8;
+		AMNTofPlayers = 5;
 	}
-	document.getElementById("playercountbutton").textContent = AMNTofPlayers + " Players";
+	document.getElementById("playercountbutton").textContent = gameSpeed + " Game Speed";
 }
 
 
@@ -105,4 +90,18 @@ function arrayContains(array,value){
 //This function writes text to whatever element you want.
 function writeTo(element,text){
 	document.getElementById(element).innerHTML = text;
+}
+
+//This function initializes arrays, and will be run after the player count is changed
+function initializeArrays(){
+  	for(var i = 0; i < AMNTofPlayers; i++){
+    		playerNames.push(0);
+    		playersAlive.push(0);
+    		playerPersonalityStatus.push(0);
+    		playerPhysicalStatus.push(0);
+    		playerMentalStatus.push(0);
+  	}
+	maxMaxTeamSize = int(AMNTofPlayers / 4);
+	maxTeamLimit = int(AMNTofPlayers / maxMaxTeamSize);
+	
 }
