@@ -6,6 +6,15 @@ p {
   text-align: center;
 }
 
+body {
+    height: 200px;
+    background: dimgrey; /* For browsers that do not support gradients */    
+    background: -webkit-linear-gradient(left top, grey, dimgrey); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(bottom right, grey, dimgrey); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(bottom right, grey, dimgrey); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to bottom right, grey, dimgrey); /* Standard syntax (must be last) */
+}
+
 #centerbutton {
   text-align: center;
 }
