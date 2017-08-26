@@ -29,6 +29,7 @@ var maxMaxTeamSize = int(AMNTofPlayers / 4);
 var maxTeamSize = defaultMaxTeamSize;
 var maxTeamLimit = int(AMNTofPlayers / maxMaxTeamSize);
 
+//This function initializes arrays, and will be run after the player count is changed
 function initializeArrays(){
   	for(var i = 0; i < AMNTofPlayers; i++){
     		playerNames.push(0);
@@ -40,6 +41,7 @@ function initializeArrays(){
 	
 }
 
+//Checks if a certain array contains something
 function arrayContains(array,value){
 	for(var i = 0; i < array.length; i++){
 		var cur = array[i];
@@ -49,12 +51,14 @@ function arrayContains(array,value){
 	}
 }
 
+//toggles whether teams exist or not.
 function toggleTeams(){
 	if(teamsExist){
 		
 	}
 }
 
+//Changes the player count
 function changePlayerCount(){
 	
 }
