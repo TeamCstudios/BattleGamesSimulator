@@ -75,7 +75,7 @@ function changeGameSpeed(){
 
 //Changes the max team size
 function changeMaxTeamSize(){
-	if(maxTeamSize != 8) {
+	if(maxTeamSize < 8) {
 		maxTeamSize = maxTeamSize + 1;
 	} else {
 		maxTeamSize = 2;
