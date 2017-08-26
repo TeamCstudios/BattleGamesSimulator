@@ -102,6 +102,6 @@ function arrayContains(array,value){
 	}
 }
 
-function testWrite(){
-	document.getElementById("paragraph2").innerHTML = "Ya like jazz?";
+function writeTo(element,text){
+	document.getElementById(element).innerHTML = text;
 }
