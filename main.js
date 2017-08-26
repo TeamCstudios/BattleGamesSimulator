@@ -68,7 +68,7 @@ function changeGameSpeed(){
 	if(gameSpeed != 5) {
 		gameSpeed = gameSpeed + 1;
 	} else {
-		gameSpeed = 5;
+		gameSpeed = 1;
 	}
 	document.getElementById("gamespeedbutton").textContent = gameSpeed + " Game Speed";
 }
