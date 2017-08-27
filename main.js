@@ -48,6 +48,7 @@ These are usually tied to buttons. */
 //Startup Script
 function startup() {
 	toggleOptions();
+	nameplayersbutton.style.display = "none"
 }
 
 //Toggle Buttons Toggle W h a t
