@@ -178,6 +178,7 @@ function namePlayers(){
 		playerPhysicalStatus[i] = 0;
 		playerMentalStatus[i] = 0;
 	}
+	nameplayersbutton.style.display = "none"
 }
 
 //NOT DONE YET
