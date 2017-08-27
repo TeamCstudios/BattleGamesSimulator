@@ -178,11 +178,13 @@ function namePlayers(){
 		playerPhysicalStatus[i] = 0;
 		playerMentalStatus[i] = 0;
 	}
+	var toggleOptionsButton = document.getElementById("toggleoptions");
 	nameplayersbutton.style.display = "none";
-	toggleOptions.style.display = "none";
-	if(optionstoggled){
+	toggleOptionsButton.style.display = "none";
+	if(optionstoggled == true){
 		toggleOptions();
 	}
+	
 }
 
 //NOT DONE YET
