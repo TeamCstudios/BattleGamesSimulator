@@ -179,7 +179,11 @@ function namePlayers(){
 		playerPhysicalStatus[i] = 0;
 		playerMentalStatus[i] = 0;
 	}
-	nameplayersbutton.style.display = "none"
+	nameplayersbutton.style.display = "none";
+	toggleOptions.style.display = "none";
+	if(optionstoggled){
+		toggleOptions();
+	}
 }
 
 //NOT DONE YET
