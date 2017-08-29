@@ -42,6 +42,9 @@ var team4 = [];
 //Buttons
 var optionstoggled = true;
 
+//Time
+var cycle = 1;
+
 /* These functions handle game settings.
 These are usually tied to buttons. */
 
@@ -140,12 +143,14 @@ function initializePlayerArrays(){
 	playerPersonalityStatus = [];
 	playerPhysicalStatus = [];
 	playerMentalStatus = [];
+	playerChecked = [];
 	for(var i = 0; i < AMNTofPlayers; i++){
     		playerNames.push(0);
     		playersAlive.push(0);
     		playerPersonalityStatus.push(0);
     		playerPhysicalStatus.push(0);
     		playerMentalStatus.push(0);
+		playerChecked.push(0);
   	}
 	maxMaxTeamSize = int(AMNTofPlayers / 4);
 	maxTeamLimit = int(AMNTofPlayers / maxMaxTeamSize);
@@ -195,7 +200,22 @@ function playerEventChecker(){
 	}
 	for(var i = 0; i < AMNTofPlayers; i++){
 		var playerid = i;
+		var playerAlive = playerAlive[playerid];
+		if(cycle % 2 == 1){
+			if(Math.floor(Math.random() * 10) + gameSpeed >= 8){
+				violentDayEvent(playerid);
+			}else{
+				peacefulDayEvent(playerid);	
+			}	
+		}else{
+			if(Math.floor(Math.random() * 10) + gameSpeed >= 8){
+				violentNightEvent(playerid);
+			}else{
+				peacefulNightEvent(playerid);	
+			}	
+		}	
 	}
+	cycle++;
 }
 
 //This runs a peaceful daytime event, possibly including alliances.
