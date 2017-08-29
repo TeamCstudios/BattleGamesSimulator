@@ -172,7 +172,8 @@ function initializeTeamArrays(){
 //This function handles the player naming.
 function namePlayers(){
 	for(var i = 0; i < AMNTofPlayers; i++){
-		playerNames[i] = prompt("Name the player","Name");
+		var pid = i + 1;
+		playerNames[i] = prompt("Name player " + pid + ".","Name");
 		playersAlive[i] = 1;
 		playerPersonalityStatus[i] = Math.floor(Math.random() * 10) + 1;
 		playerPhysicalStatus[i] = 0;
@@ -187,7 +188,7 @@ function namePlayers(){
 	
 }
 
-//NOT DONE YET
+//This function should check each player and make sure they have an event each day.
 function playerEventChecker(){
 	for(var i = 0; i < AMNTofPlayers; i++){
 		playerChecked.push(1);
@@ -196,3 +197,24 @@ function playerEventChecker(){
 		var playerid = i;
 	}
 }
+
+//This runs a peaceful daytime event, possibly including alliances.
+function peacefulDayEvent(id){
+	
+}
+
+//This runs a violent daytime event, resulting in at least one death.
+function violentDayEvent(id){
+	
+}
+
+//This runs a peaceful nighttime event, possibly including alliances.
+function peacefulNightEvent(id){
+	
+}
+
+//This runs a violent nighttime event, resulting in at least one death.
+function violentNightEvent(id){
+	
+}
+	
