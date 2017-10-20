@@ -191,7 +191,7 @@ function namePlayers() {
   if (optionstoggled == true) {
     toggleOptions();
   }
-
+  
 }
 
 //This function should check each player and make sure they have an event each day.
