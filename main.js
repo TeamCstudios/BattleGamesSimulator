@@ -191,8 +191,8 @@ function namePlayers() {
   if (optionstoggled == true) {
     toggleOptions();
   }
-  writeTo(paragraph0,"");
-  writeTo(paragraph1,"");
+  writeTo("paragraph0","");
+  writeTo("paragraph1","");
 }
 
 //This function should check each player and make sure they have an event each day.
